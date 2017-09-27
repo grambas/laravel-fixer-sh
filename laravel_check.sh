@@ -1,8 +1,10 @@
-#!/bin/bash
+#!/bin/sh
+## Author: Mindaugas Milius
+## Usage:  	run: sh laravel_check.sh
+##			follow instructions in console
 
 
-
-echo "Start extension and php version test? (y/n)"
+echo "Start Modules and PHP version test? (y/n)"
 read test1
 
 #################################################################
@@ -12,7 +14,7 @@ read test1
 
 if [ "$test1"  =  "y" ]; then
 
-	echo "Enter your Laravel version? (ENTER)"
+	echo "Enter your Laravel version? [ENTER]"
 	read version
 
 	echo  "Enter laravel_check.php URL (example.com/laravel_check.php) [ENTER]: "
@@ -34,7 +36,7 @@ if [ "$test1"  =  "y" ]; then
 fi
 
 
-echo "\n\nStart file and folder permission fix? (y/n) (sudo needed)"
+echo "\n\nStart File and Folder permissions fix? (y/n) (sudo needed)"
 read test2
 if [ "$test2"  !=  "y" ]; then
     echo "Exiting script..."
@@ -47,16 +49,15 @@ echo "You have selected user: $name"
 echo "Enter laravel main path [ENTER]: "
 read  path
 echo "You have selected path: $path"
-echo "Please double check the input! Press n to cencel or y to agree and press [ENTER]"
+echo "Please double check the input! Continue ? (y/n) [ENTER]"
 read confirm
-
 
 if [ "$confirm"  !=  "y" ]; then
     echo "Exiting script..."
     exit 0
 fi
 
-###################################################
+##################################################
 # Fix File & Folder permissions
 ##################################################
 
@@ -96,4 +97,3 @@ echo "Running: sudo chmod -R ug+rwx storage bootstrap/cache"
 sudo chmod -R ug+rwx "$path"/storage "$path"/bootstrap/cache
 
 echo "DONE!"
-
