@@ -1,5 +1,5 @@
 #!/bin/sh
-## Author: Mindaugas Milius
+## Author: 	Mindaugas Milius
 ## Usage:  	run: sh laravel_check.sh
 ##			follow instructions in console
 

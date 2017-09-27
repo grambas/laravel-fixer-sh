@@ -1,10 +1,12 @@
 <?php
 /*
+
 Author: Mindaugas Milius
 Description: This php script should be called from shell script (laravel_check.php)
 The Script checks if PHP version compatible with Laravel version and if all 
 required modules are loaded
 $laravel array should be always updated with newsest laravel releases manually
+
 */
 
 //Do not edit this initial line! 
