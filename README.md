@@ -11,15 +11,19 @@ Also its fixes laravel folders & files permissions
 Download or clone it to Laravel project /public folder.
 
 ```
-/srv/example.com/public/laravel_checker.php
-/srv/example.com/public/laravel_checker.sh
+git clone https://github.com/grambas/laravel_fixer.git
 ```
 
-Check if files are executable (if not chmod og+x)
-
-run 
+Should like like below:
 ```
-sh /srv/example.com/public/laravel_checker.sh
+/path/to/laravel/public/laravel_check.php
+/path/to/laravel/public/laravel_check.sh
+```
+
+Check if files are executable (if not: chmod og+x /path/to/laravel/public/laravel_check.sh)
+Then run 
+```
+sh /path/to/laravel/public/laravel_checker.sh
 ```
 
 Follow instructions in console...
