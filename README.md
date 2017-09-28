@@ -5,6 +5,13 @@
 This shell & php script show you if your Laravel version is compatible with PHP version and checks if all required modules are loaded.
 Also its fixes laravel folders & files permissions
 
+### Check php modules and version is possible from terminal. Why seperate PHP file to do it?
+
+Not always terminal PHP version is the same with project PHP version. Calling PHP file we ensure that the right one PHP version is checked.
+
+### Why do I need this?
+
+With different web server configurations you may fall in problems by running Laravel framework. Missing modules can lead to very misleading errors. Sometimes you become no logs, no error displays or blank pages. Firstly what you need to do is to check basic configuration. This script can do it in few seconds. Also it fixes file & folder permissions.
 
 ### Installing
 
@@ -31,9 +38,3 @@ Follow instructions in console...
 
 ## Demo
 ![Demo](https://github.com/grambas/laravel_fixer/blob/master/demo.png?raw=true)
-
-
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
